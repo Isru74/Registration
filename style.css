@@ -1,0 +1,138 @@
+/* General reset and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d1b2a; /* Dark Blue */
+    color: #f4f7fc; /* Light text for contrast */
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #011f36; /* Darker blue */
+    padding: 15px 30px;
+}
+.navbar .logo img {
+    height: 250px; /* Make logo bigger */
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links li a {
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.nav-links li a:hover {
+    color: #ff6347; /* Accent color */
+}
+
+/* Hero section */
+.hero {
+    background: #011f36; /* Dark Blue */
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.registration-form, .about, .languages, .faq {
+    background: #1f2a44; /* Slightly lighter dark blue */
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #f4f7fc; /* Light text */
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="password"], input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #0d1b2a; /* Dark Blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #ff6347; /* Accent color */
+}
+
+/* Hover effects */
+section:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+.language-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;  /* Allow icons to wrap on smaller screens */
+}
+
+.language-item {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100px;  /* Default size */
+    max-width: 20vw;  /* Limit the width to 20% of the viewport width */
+    flex: 1;
+}
+
+.language-item img {
+    width: 100%;  /* Make image width scalable */
+    max-width: 50px; /* Max size of the image */
+    height: auto;
+}
+
+.language-item:hover {
+    transform: translateY(-10px);
+}
+
+.faq-item {
+    background-color: #1f2a44; /* Slightly lighter dark blue */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+    background-color: #ff6347; /* Accent color */
+    color: #fff;
+}
